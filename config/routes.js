@@ -1,7 +1,7 @@
 const express = require("express");
 const controllers = require("../app/controllers");
 const cors = require('cors');
-const handleGoogleLoginOrRegister = require("../handleGoogleLogin");
+const handleGoogleLoginOrRegister = require("../app/controllers/api/v1/handleGoogleLogin");
 
 const apiRouter = express.Router();
 apiRouter.use(express.json(), cors());

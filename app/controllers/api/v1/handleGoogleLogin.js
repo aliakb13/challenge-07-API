@@ -1,6 +1,6 @@
 const axios = require("axios");
 const jwt = require("jsonwebtoken");
-const { User } = require("./app/models");
+const { User } = require("../../../models");
 const { OAuth2Client } = require("google-auth-library")
 const { JWT_SECRET_KEY = "Rahasia" } = process.env;
 const client = new OAuth2Client(process.env.REACT_APP_GOOGLE_CLIENT_ID);
